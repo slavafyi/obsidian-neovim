@@ -33,11 +33,11 @@ Style Settings plugin. For further customization, use Obsidian's
 
 ### Dark
 
-![NvimDark for Obsidian](./screenshot-dark.png)
+![Neovim for Obsidian on desktop in dark mode](./screenshots/desktop-dark.png)
 
 ### Light
 
-![NvimLight for Obsidian](./screenshot-light.png)
+![Neovim for Obsidian on desktop in light mode](./screenshots/desktop-light.png)
 
 ## Contributing
 

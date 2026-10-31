@@ -21,6 +21,8 @@ body {
 }
 
 .theme-dark {
+  --neovim-base-10: #07080d;
+  --neovim-base-20: #14161b;
   --accent-h: 132;
   --accent-s: 79%;
   --accent-l: 83%;
@@ -38,8 +40,8 @@ body {
   --color-blue: #a6dbff;
   --color-purple-rgb: 255, 202, 255;
   --color-purple: #ffcaff;
-  --color-base-10: #07080d;
-  --color-base-20: #14161b;
+  --color-base-10: var(--neovim-base-10);
+  --color-base-20: var(--neovim-base-20);
   --color-base-30: #2c2e33;
   --color-base-40: #4f5258;
   --color-base-50: #9b9ea4;
@@ -49,6 +51,8 @@ body {
 }
 
 .theme-light {
+  --neovim-base-10: #eef1f8;
+  --neovim-base-20: #e0e2ea;
   --accent-h: 145;
   --accent-s: 100%;
   --accent-l: 17%;
@@ -66,8 +70,8 @@ body {
   --color-blue: #004c73;
   --color-purple-rgb: 71, 0, 69;
   --color-purple: #470045;
-  --color-base-10: #eef1f8;
-  --color-base-20: #e0e2ea;
+  --color-base-10: var(--neovim-base-10);
+  --color-base-20: var(--neovim-base-20);
   --color-base-30: #c4c6cd;
   --color-base-40: #9b9ea4;
   --color-base-50: #4f5258;
@@ -88,9 +92,9 @@ body {
   --color-pink: var(--color-purple);
   --color-pink-rgb: var(--color-purple-rgb);
 
-  --background-primary: var(--color-base-20);
+  --background-primary: var(--neovim-base-20);
   --background-primary-alt: var(--color-base-30);
-  --background-secondary: var(--color-base-20);
+  --background-secondary: var(--neovim-base-20);
   --background-secondary-alt: var(--color-base-30);
   --background-modifier-form-field: var(--color-base-30);
   --text-accent: var(--color-accent);
@@ -106,7 +110,7 @@ body {
   --text-highlight-bg: var(--highlight-background-yellow);
   --highlight-background: var(--highlight-background-yellow);
 
-  --code-background: var(--color-base-10);
+  --code-background: var(--neovim-base-10);
   --code-normal: var(--color-base-70);
   --code-comment: var(--color-base-50);
   --code-function: var(--color-cyan);
