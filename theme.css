@@ -1,7 +1,7 @@
 body {
   --text-normal: var(--color-base-60);
-  --text-muted: var(--color-base-70);
-  --text-faint: var(--color-base-80);
+  --text-muted: var(--color-base-50);
+  --text-faint: var(--color-base-50);
   --text-on-accent: var(--color-base-20);
   --modal-border-color: var(--color-base-30, var(--background-modifier-border-focus));
   --prompt-border-color: var(--color-base-30, var(--background-modifier-border-focus));
@@ -28,7 +28,7 @@ body {
   --color-accent-2: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.05), calc(var(--accent-l) * 1.15));
   --color-red-rgb: 255, 192, 185;
   --color-red: #ffc0b9;
-  --color-yellow-rgb: 254, 224, 148;
+  --color-yellow-rgb: 252, 224, 148;
   --color-yellow: #fce094;
   --color-green-rgb: 179, 246, 192;
   --color-green: #b3f6c0;
@@ -78,6 +78,16 @@ body {
 
 .theme-dark,
 .theme-light {
+  --color-base-00: var(--color-base-10);
+  --color-base-05: var(--color-base-10);
+  --color-base-25: var(--color-base-30);
+  --color-base-35: var(--color-base-40);
+  --color-base-100: var(--color-base-70);
+  --color-orange: var(--color-yellow);
+  --color-orange-rgb: var(--color-yellow-rgb);
+  --color-pink: var(--color-purple);
+  --color-pink-rgb: var(--color-purple-rgb);
+
   --background-primary: var(--color-base-20);
   --background-primary-alt: var(--color-base-30);
   --background-secondary: var(--color-base-20);
@@ -90,4 +100,110 @@ body {
   --background-modifier-border-focus: var(--color-base-40);
   --interactive-normal: var(--color-base-10);
   --interactive-hover: var(--color-base-20);
+
+  --text-selection: var(--color-base-40);
+  --highlight-background-yellow: color-mix(in srgb, var(--color-yellow) 20%, transparent);
+  --text-highlight-bg: var(--highlight-background-yellow);
+  --highlight-background: var(--highlight-background-yellow);
+
+  --code-background: var(--color-base-10);
+  --code-normal: var(--color-base-70);
+  --code-comment: var(--color-base-50);
+  --code-function: var(--color-cyan);
+  --code-important: var(--color-cyan);
+  --code-keyword: var(--color-base-70);
+  --code-operator: var(--color-base-70);
+  --code-property: var(--color-blue);
+  --code-punctuation: var(--color-base-70);
+  --code-string: var(--color-green);
+  --code-tag: var(--color-cyan);
+  --code-value: var(--color-base-70);
+
+  --blockquote-color: var(--text-normal);
+  --blockquote-border-color: var(--color-base-40);
+
+  --callout-default: var(--color-cyan);
+  --callout-info: var(--color-cyan);
+  --callout-todo: var(--color-blue);
+  --callout-important: var(--color-cyan);
+  --callout-tip: var(--color-cyan);
+  --callout-success: var(--color-green);
+  --callout-question: var(--color-yellow);
+  --callout-warning: var(--color-yellow);
+  --callout-fail: var(--color-red);
+  --callout-error: var(--color-red);
+  --callout-bug: var(--color-red);
+  --callout-example: var(--color-purple);
+  --callout-summary: var(--color-cyan);
+  --callout-quote: var(--text-muted);
+}
+
+.markdown-rendered .token.keyword,
+.markdown-source-view.mod-cm6 .cm-keyword {
+  font-weight: var(--font-bold);
+}
+
+.plugin-tasks-toolbar {
+  align-items: center;
+  gap: var(--size-4-2);
+}
+
+.plugin-tasks-toolbar > label {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  max-width: 24em;
+}
+
+.plugin-tasks-toolbar label input {
+  width: 100%;
+  min-width: 0;
+  height: var(--input-height);
+  padding: 0 var(--size-4-2);
+  padding-inline-start: calc(var(--icon-size) + var(--size-4-4));
+  font-family: var(--font-interface);
+  font-size: var(--font-ui-small);
+  color: var(--text-normal);
+  background-color: var(--background-modifier-form-field);
+  border: var(--border-width) solid var(--background-modifier-border);
+  border-radius: var(--input-radius);
+  box-shadow: none;
+}
+
+.plugin-tasks-toolbar label input::placeholder {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+.plugin-tasks-toolbar label .svg-icon {
+  inset-inline-start: var(--size-4-2);
+  transform: none;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.plugin-tasks-toolbar > button {
+  flex: 0 0 var(--input-height);
+  width: var(--input-height);
+  height: var(--input-height);
+  padding: 0;
+  font-family: var(--font-interface);
+  font-size: var(--font-ui-small);
+  color: var(--text-muted);
+  background-color: var(--interactive-normal);
+  border: var(--border-width) solid var(--background-modifier-border);
+  border-radius: var(--input-radius);
+  box-shadow: none;
+}
+
+.plugin-tasks-toolbar > button:hover {
+  color: var(--text-normal);
+  background-color: var(--color-base-30);
+  border-color: var(--background-modifier-border-focus);
+}
+
+.plugin-tasks-toolbar label input:focus,
+.plugin-tasks-toolbar > button:focus-visible {
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 2px;
 }
