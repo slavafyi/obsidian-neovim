@@ -17,8 +17,17 @@
     "neovim"
   ],
   "type": "module",
+  "packageManager": "pnpm@12.16.1",
   "scripts": {
     "release": "bumpp package.json manifest.json --tag '%s'"
+  },
+  "changelogithub": {
+    "tag": "%s",
+    "types": {
+      "docs": {
+        "title": "📚 Documentation"
+      }
+    }
   },
   "devDependencies": {
     "bumpp": "^12.3.0"
