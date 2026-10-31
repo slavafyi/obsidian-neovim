@@ -1,6 +1,8 @@
 # Obsidian + Neovim
 
-This is a basic Obsidian theme, only with modified colors to match the default Neovim color scheme, so nothing supernatural. The default Neovim color scheme is [announced](https://neovim.io/roadmap/) in version 0.10.
+An Obsidian theme that keeps the default layout and uses the default Neovim
+palette in dark and light modes. Neovim introduced this color scheme in
+[version 0.10](https://neovim.io/roadmap/).
 
 Check [this pull request](https://github.com/neovim/neovim/pull/26540) for more information.
 
@@ -16,6 +18,12 @@ Check [this pull request](https://github.com/neovim/neovim/pull/26540) for more 
 In **Settings → Appearance**, set **Base color scheme** to **Dark** or **Light**
 to use the matching Neovim palette, or choose **Adapt to system** to follow your
 system setting.
+
+Body text uses softer shades for reading. Code follows Neovim's restrained
+syntax colors, with green strings, cyan functions, and bold neutral keywords.
+Quotes, callouts, highlights, and secondary labels use the same palette.
+The Tasks plugin's filter and copy button also match the theme; the plugin
+is optional.
 
 Neovim does not provide any **Style Settings** options and does not require the
 Style Settings plugin. For further customization, use Obsidian's
