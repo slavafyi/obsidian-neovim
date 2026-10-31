@@ -5,22 +5,22 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slavamak/obsidian-neovim.git"
+    "url": "git+https://github.com/slavafyi/obsidian-neovim.git"
   },
   "bugs": {
-    "url": "https://github.com/slavamak/obsidian-neovim/issues"
+    "url": "https://github.com/slavafyi/obsidian-neovim/issues"
   },
-  "homepage": "https://github.com/slavamak/obsidian-neovim#readme",
-  "author": "Slava Maksimov <hello@slavamak.com>",
+  "homepage": "https://github.com/slavafyi/obsidian-neovim#readme",
+  "author": "Slava M. <hi@slava.fyi>",
   "keywords": [
     "obsidian-theme",
     "neovim"
   ],
   "type": "module",
   "scripts": {
-    "release": "bumpp package.json manifest.json"
+    "release": "bumpp package.json manifest.json --tag '%s'"
   },
   "devDependencies": {
-    "bumpp": "^9.3.0"
+    "bumpp": "^12.3.0"
   }
 }

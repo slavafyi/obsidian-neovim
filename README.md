@@ -18,3 +18,8 @@ Check [this pull request](https://github.com/neovim/neovim/pull/26540) for more 
 
 If you have any problems or have suggestions, welcome to issues.
 
+---
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
